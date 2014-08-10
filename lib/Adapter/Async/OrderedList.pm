@@ -1,5 +1,5 @@
 package Adapter::Async::OrderedList;
-$Adapter::Async::OrderedList::VERSION = '0.001';
+$Adapter::Async::OrderedList::VERSION = '0.002';
 use strict;
 use warnings;
 
@@ -7,11 +7,11 @@ use parent qw(Adapter::Async);
 
 =head1 NAME
 
-Adapter::Async - provides a way to link a data source with a view
+Adapter::Async::OrderedList - API for dealing with ordered lists
 
 =head1 VERSION
 
-Version 0.001
+Version 0.002
 
 =head1 DESCRIPTION
 

@@ -1,4 +1,10 @@
 Revision history for Adapter-Async
 
+0.002     2014-08-10 14:58:33+01:00 Europe/London
+	No new features
+
+	Documentation fixes:
+	* Fix NAME section for ::OrderedList to resolve CPAN indexing issues
+
 0.001     2014-08-10 08:31:22+01:00 Europe/London
-Initial CPAN release
+	Initial CPAN release
