@@ -1,0 +1,45 @@
+=for comment POD_DERIVED_INDEX_GENERATED
+The following documentation is automatically generated.  Please do not edit
+this file, but rather the original, inline with Adapter::Async::OrderedList::Array
+at lib/Adapter/Async/OrderedList/Array.pm
+(on the system that originally ran this).
+If you do edit this file, and don't want your changes to be removed, make
+sure you change the first line.
+
+=encoding utf8
+
+=cut
+
+=head1 NAME
+
+Adapter::Async::OrderedList::Array - arrayref adapter
+
+=head1 VERSION
+
+Version 0.001
+
+=head1 DESCRIPTION
+
+See L<Adapter::Async::OrderedList> for the API.
+
+=head1 count
+
+=head1 get
+
+=head1 INHERITED METHODS
+
+=over 4
+
+=item L<Adapter::Async>
+
+L<bus|Adapter::Async/bus>
+
+=back
+
+=head1 AUTHOR
+
+Tom Molesworth <cpan@perlsite.co.uk>
+
+=head1 LICENSE
+
+Copyright Tom Molesworth 2013-2014. Licensed under the same terms as Perl itself.
