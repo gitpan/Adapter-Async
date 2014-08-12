@@ -1,5 +1,11 @@
 Revision history for Adapter-Async
 
+0.003     2014-08-12 18:39:22+01:00 Europe/London
+	No new features
+
+	Dependency fixes:
+	* Add curry to the list
+
 0.002     2014-08-10 14:58:33+01:00 Europe/London
 	No new features
 

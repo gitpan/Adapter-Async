@@ -22,8 +22,9 @@ name: Adapter-Async
 requires:
   Future: '0.29'
   Mixin::Event::Dispatch: '1.005'
+  curry: '0'
   parent: '0'
 resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Adapter-Async
   homepage: http://search.cpan.org/dist/Adapter-Async/
-version: '0.002'
+version: '0.003'

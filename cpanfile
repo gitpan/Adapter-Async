@@ -1,4 +1,5 @@
 requires 'parent', 0;
+requires 'curry', 0;
 requires 'Future', '>= 0.29';
 requires 'Mixin::Event::Dispatch', '>= 1.005';
 

@@ -22,6 +22,7 @@ my %WriteMakefileArgs = (
   "PREREQ_PM" => {
     "Future" => "0.29",
     "Mixin::Event::Dispatch" => "1.005",
+    "curry" => 0,
     "parent" => 0
   },
   "TEST_REQUIRES" => {
@@ -32,7 +33,7 @@ my %WriteMakefileArgs = (
     "Test::Fatal" => "0.010",
     "Test::More" => "0.98"
   },
-  "VERSION" => "0.002",
+  "VERSION" => "0.003",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -48,6 +49,7 @@ my %FallbackPrereqs = (
   "Test::CheckDeps" => "0.010",
   "Test::Fatal" => "0.010",
   "Test::More" => "0.98",
+  "curry" => 0,
   "parent" => 0
 );
 

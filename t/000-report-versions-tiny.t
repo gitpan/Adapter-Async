@@ -57,6 +57,7 @@ eval { $v .= pmver('Mixin::Event::Dispatch','1.005') };
 eval { $v .= pmver('Test::CheckDeps','0.010') };
 eval { $v .= pmver('Test::Fatal','0.010') };
 eval { $v .= pmver('Test::More','0.98') };
+eval { $v .= pmver('curry','any version') };
 eval { $v .= pmver('parent','any version') };
 
 

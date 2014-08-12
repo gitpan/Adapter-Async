@@ -14,26 +14,26 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 74542aee208ffd0e77cab2f9f55bd34a4515c409 Changes
+SHA1 c3a02a91360991604236ad7e3d9970c70fed4244 Changes
 SHA1 aab70c550aec0561d89c10a4dce90dd6477cc94e INSTALL
 SHA1 6b50b30fa6f8d063d96e32c9a81f3f82328925f7 LICENSE
 SHA1 ba6090bfac9edcc9cd39bbba8d89659d71d43315 MANIFEST
-SHA1 99f7b6f450e41b02f1bec8c2aea42b3ae587c627 META.json
-SHA1 a7faf494b99cb986b6913b5027462aaba584128c META.yml
-SHA1 dd17a5645a50be4b5891e2494445adc518458f35 Makefile.PL
-SHA1 f8a48088fa17b22912c54dee4a2191e4800edc1c README
-SHA1 0dcd9c2949188c8f2a6d0d4d6809c11343b0eafb cpanfile
+SHA1 7fc3ad34cb5d5c78a1566f68f22b5b97555e1e8e META.json
+SHA1 14824c8b14f994a4ca77d00d9e6d376d10b7a1b4 META.yml
+SHA1 2d9ba3b362134157a766959597e2632085ce6ab0 Makefile.PL
+SHA1 038e9fbe6b62862394ddeb4fd1ebb3e371baa54d README
+SHA1 e4457dbc153534b554291a061d61b3f649f197b4 cpanfile
 SHA1 beb20a824ccbbcc9f2948375a0700c6f35f52232 dist.ini
-SHA1 ce497b5e92dcc619513418750a9bf6d04a19ea39 lib/Adapter/Async.pm
-SHA1 b133196b03f066caf47e89c773d945dd182ef059 lib/Adapter/Async/Bus.pm
-SHA1 3f6fde6d10dde373375f1928181e4e0603bf5dbd lib/Adapter/Async/Bus.pod
-SHA1 4c201f86d7e0c16d8691e1d58940efc09f563c35 lib/Adapter/Async/OrderedList.pm
-SHA1 1004962352e2f62a05c5e500acef9672bf40bbfd lib/Adapter/Async/OrderedList.pod
-SHA1 ea24c2b69749ce0dd74727444f2621674c3cdb62 lib/Adapter/Async/OrderedList/Array.pm
-SHA1 ef4c9a65cf4733cdedb8081449296bc7849f9b7d lib/Adapter/Async/OrderedList/Array.pod
+SHA1 ab74769b2a27b2474717170c8ed7f1de4cd7cf81 lib/Adapter/Async.pm
+SHA1 36a63e9df2edfad11e39023b4b50a464851ffd1a lib/Adapter/Async/Bus.pm
+SHA1 745646d3623bf11651c7b6e7734629c55b9b3c35 lib/Adapter/Async/Bus.pod
+SHA1 91402cca2deb09059580b0473583195f1e8bd489 lib/Adapter/Async/OrderedList.pm
+SHA1 53fac8b6d2ee5f60a73a84df1009abad7d00770f lib/Adapter/Async/OrderedList.pod
+SHA1 3b543c7227ed258953a9e7c4b953b2669e41f8db lib/Adapter/Async/OrderedList/Array.pm
+SHA1 29d1a8291c3bb62c3932ea65111f7ede02d40509 lib/Adapter/Async/OrderedList/Array.pod
 SHA1 985d9ded8d8ed7e344a09e52b1402e878e91da28 t/00-check-deps.t
 SHA1 9affea4acd9c7ce208007e22c0a2cba85558892f t/00-compile.t
-SHA1 c3f90e46949153d58e352010eafc6687b7fba389 t/000-report-versions-tiny.t
+SHA1 cfc3224209cbd0af4f082a486a21c7c0894e582c t/000-report-versions-tiny.t
 SHA1 460fa46de581bc4a68fd98757a16af8b2ca15688 t/array.t
 SHA1 198d1665317c3d91e3bb81f0a3b8dad8d4d66f20 xt/release/common_spelling.t
 SHA1 c6c3c9f7fe12058b4771449dff874b1c450c982c xt/release/mojibake.t
@@ -43,11 +43,11 @@ SHA1 bbcd59d081d9940af5d43337ae85458075933829 xt/release/test-version.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJT53qSAAoJEFKElMNpjtyDcl4H/1hskQ1KURu4V9OlkmbNXyqo
-Ue6EcpFvWKO/rKw8Rdf/Q8ycPBKeICV1sJhHtybAzEu9bUMBz2ZWgOQXIz1gWD60
-y+R5tpmlgRbDGQmo/ACjXtAq74fOzfIxuHE+kBzN/RGX2jWu4DOj9Gh144yxmXIr
-vbFKiUaqZICebnC0YgBTqzFwCNbbv404ouz98Gjpo0rNeEPYMmgM1lQnjdzT8+bn
-PZnTCdxqozhOe6VYWeCRbuiEg/WOtpZhAmVlgE0lNM9cLrR9/rIwTqGeV992gXJs
-yDZG5Tf4g1d+r67X/4e/Q/09s5klzS2Lg7d1/YI9E7vYJw+3wCz8WvJuqOFz57A=
-=EJvu
+iQEcBAEBAgAGBQJT6lFTAAoJEFKElMNpjtyD8TcH/Au96HRll74vzD52BW8NM+ra
+Aa1OLj9qW8G+52/pUEUOmR0wA/XI54+UXQ0URrAAMGqjWqhT/+DpbH9xSsH9mpr2
+LfWa5mT8xcqDmG1SKzYuMzo4shBCK2hBlAtUmtBreMnQdTuQRoqy3r2+75gXannG
++eSs/KseLBMYsOUBM7jTcPIlMCQFyKK1dXOE/OcO3fxhMg3annqncFJYehAoc/br
+gohrjNIOKnmHTZ20VFD21+MiUH+38Jh9KA6ymhL6X6jOyL32bpGgvHohjJ4XZgeE
+t+CjTXyVGyiyRx4zHwiWxjoLuK+pTQej8vnjGMlbK3xrZka0YpjyGXw7QNt2wgA=
+=avkD
 -----END PGP SIGNATURE-----
