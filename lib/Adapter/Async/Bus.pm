@@ -1,5 +1,5 @@
 package Adapter::Async::Bus;
-$Adapter::Async::Bus::VERSION = '0.005';
+$Adapter::Async::Bus::VERSION = '0.006';
 use strict;
 use warnings;
 
@@ -12,7 +12,7 @@ Adapter::Async::Bus -
 
 =head1 VERSION
 
-Version 0.005
+Version 0.006
 
 =head1 SYNOPSIS
 

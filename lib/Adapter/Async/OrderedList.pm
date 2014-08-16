@@ -1,5 +1,5 @@
 package Adapter::Async::OrderedList;
-$Adapter::Async::OrderedList::VERSION = '0.005';
+$Adapter::Async::OrderedList::VERSION = '0.006';
 use strict;
 use warnings;
 
@@ -11,7 +11,7 @@ Adapter::Async::OrderedList - API for dealing with ordered lists
 
 =head1 VERSION
 
-Version 0.005
+Version 0.006
 
 =head1 DESCRIPTION
 
@@ -153,9 +153,11 @@ Appends data to the end of the list.
 
 sub push {
 	my ($self, $data) = @_;
-	$self->count->then(sub {
+	my $f;
+	$f = $self->count->then(sub {
 		$self->splice(shift, 0, $data)
-	})
+	})->on_ready(sub { undef $f });
+	$f
 }
 
 =head2 unshift
@@ -177,9 +179,11 @@ Removes the last element from the list, will resolve with the value.
 
 sub pop {
 	my ($self, $data) = @_;
-	$self->count->then(sub {
-		$self->splice(shift, 1)
-	})
+	my $f;
+	$f = $self->count->then(sub {
+		$self->splice(shift, 0, 1)
+	})->on_ready(sub { undef $f });
+	$f
 }
 
 =head2 shift

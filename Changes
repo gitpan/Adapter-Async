@@ -1,5 +1,11 @@
 Revision history for Adapter-Async
 
+0.006     2014-08-16 09:42:43+01:00 Europe/London
+	No new features.
+
+	Bug fixes:
+	* Allow calling ->push and ->pop in void context
+
 0.005     2014-08-16 09:30:50+01:00 Europe/London
 	No new features.
 
