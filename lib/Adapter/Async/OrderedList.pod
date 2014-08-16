@@ -16,7 +16,7 @@ Adapter::Async::OrderedList - API for dealing with ordered lists
 
 =head1 VERSION
 
-Version 0.004
+Version 0.005
 
 =head1 DESCRIPTION
 
@@ -119,6 +119,36 @@ Multi-activate will typically happen when items have been selected rather than j
 The adapter itself doesn't do much with this.
 
 =back
+
+=head1 METHODS
+
+=head2 insert
+
+Inserts data before the given position.
+
+ $adapter->insert(3, [...])
+
+=head2 append
+
+Appends data after the given position.
+
+ $adapter->append(3, [...])
+
+=head2 push
+
+Appends data to the end of the list.
+
+=head2 unshift
+
+Inserts data at the start of the list.
+
+=head2 pop
+
+Removes the last element from the list, will resolve with the value.
+
+=head2 shift
+
+Removes the first element from the list, will resolve with the value.
 
 =head1 INHERITED METHODS
 
