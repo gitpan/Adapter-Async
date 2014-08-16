@@ -1,5 +1,12 @@
 Revision history for Adapter-Async
 
+0.004     2014-08-16 09:23:55+01:00 Europe/London
+	Features:
+	* Helper methods for ->push, ->shift, ->unshift, ->pop
+	* Moved ->insert, ->append to ::OrderedList, since
+	the wrappers are likely to be appropriate for other
+	implementations as well
+
 0.003     2014-08-12 18:39:22+01:00 Europe/London
 	No new features
 

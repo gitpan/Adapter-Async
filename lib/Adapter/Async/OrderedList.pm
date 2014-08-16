@@ -1,5 +1,5 @@
 package Adapter::Async::OrderedList;
-$Adapter::Async::OrderedList::VERSION = '0.003';
+$Adapter::Async::OrderedList::VERSION = '0.004';
 use strict;
 use warnings;
 
@@ -11,7 +11,7 @@ Adapter::Async::OrderedList - API for dealing with ordered lists
 
 =head1 VERSION
 
-Version 0.003
+Version 0.004
 
 =head1 DESCRIPTION
 
@@ -116,6 +116,40 @@ The adapter itself doesn't do much with this.
 =back
 
 =cut
+
+sub insert {
+	my ($self, $idx, $data) = @_;
+	$self->splice($idx, 0, $data)
+}
+
+sub append {
+	my ($self, $idx, $data) = @_;
+	$self->splice($idx + 1, 0, $data)
+}
+
+sub push {
+	my ($self, $data) = @_;
+	$self->count->then(sub {
+		$self->splice(shift, 0, $data)
+	})
+}
+
+sub unshift {
+	my ($self, $data) = @_;
+	$self->splice(0, 0, $data)
+}
+
+sub pop {
+	my ($self, $data) = @_;
+	$self->count->then(sub {
+		$self->splice(shift, 1)
+	})
+}
+
+sub shift {
+	my ($self, $data) = @_;
+	$self->splice(0, 1)
+}
 
 1;
 

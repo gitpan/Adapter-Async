@@ -3,7 +3,7 @@ package Adapter::Async;
 use strict;
 use warnings;
 
-our $VERSION = '0.003';
+our $VERSION = '0.004';
 
 =head1 NAME
 
@@ -11,7 +11,7 @@ Adapter::Async - provides a way to link a data source with a view
 
 =head1 VERSION
 
-Version 0.003
+Version 0.004
 
 =head1 DESCRIPTION
 

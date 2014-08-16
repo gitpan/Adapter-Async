@@ -1,5 +1,5 @@
 package Adapter::Async::OrderedList::Array;
-$Adapter::Async::OrderedList::Array::VERSION = '0.003';
+$Adapter::Async::OrderedList::Array::VERSION = '0.004';
 use strict;
 use warnings;
 
@@ -11,7 +11,7 @@ Adapter::Async::OrderedList::Array - arrayref adapter
 
 =head1 VERSION
 
-Version 0.003
+Version 0.004
 
 =head1 DESCRIPTION
 
@@ -54,16 +54,6 @@ sub modify {
 	die "row out of bounds" unless @{$self->{data}} >= $idx;
 	$self->{data}[$idx][$_] = $cols[$_] for 0..$#cols;
 	Future->wrap
-}
-
-sub insert {
-	my ($self, $idx, $data) = @_;
-	$self->splice($idx, 0, $data)
-}
-
-sub append {
-	my ($self, $idx, $data) = @_;
-	$self->splice($idx + 1, 0, $data)
 }
 
 sub delete {
