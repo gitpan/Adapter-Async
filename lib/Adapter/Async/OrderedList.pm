@@ -1,5 +1,5 @@
 package Adapter::Async::OrderedList;
-$Adapter::Async::OrderedList::VERSION = '0.006';
+$Adapter::Async::OrderedList::VERSION = '0.007';
 use strict;
 use warnings;
 
@@ -11,7 +11,7 @@ Adapter::Async::OrderedList - API for dealing with ordered lists
 
 =head1 VERSION
 
-Version 0.006
+Version 0.007
 
 =head1 DESCRIPTION
 
@@ -181,7 +181,7 @@ sub pop {
 	my ($self, $data) = @_;
 	my $f;
 	$f = $self->count->then(sub {
-		$self->splice(shift, 0, 1)
+		$self->splice(shift() - 1, 1)
 	})->on_ready(sub { undef $f });
 	$f
 }
@@ -195,6 +195,27 @@ Removes the first element from the list, will resolve with the value.
 sub shift {
 	my ($self, $data) = @_;
 	$self->splice(0, 1)
+}
+
+=head2 all
+
+Returns all the items. Shortcut for calling
+L</count> then L</get>.
+
+=cut
+
+sub all {
+	my ($self, %args) = @_;
+	my $f;
+	$f = $self->count->then(sub {
+		my ($count) = @_;
+		return Future->wrap([]) unless $count;
+		$self->get(
+			%args,
+			items => [0..$count-1],
+		)
+	})->on_ready(sub { undef $f });
+	$f
 }
 
 1;

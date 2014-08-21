@@ -16,7 +16,7 @@ Adapter::Async::OrderedList::Array - arrayref adapter
 
 =head1 VERSION
 
-Version 0.006
+Version 0.007
 
 =head1 DESCRIPTION
 
@@ -32,7 +32,7 @@ See L<Adapter::Async::OrderedList> for the API.
 
 =item L<Adapter::Async::OrderedList>
 
-L<append|Adapter::Async::OrderedList/append>, L<insert|Adapter::Async::OrderedList/insert>, L<pop|Adapter::Async::OrderedList/pop>, L<push|Adapter::Async::OrderedList/push>, L<shift|Adapter::Async::OrderedList/shift>, L<unshift|Adapter::Async::OrderedList/unshift>
+L<all|Adapter::Async::OrderedList/all>, L<append|Adapter::Async::OrderedList/append>, L<insert|Adapter::Async::OrderedList/insert>, L<pop|Adapter::Async::OrderedList/pop>, L<push|Adapter::Async::OrderedList/push>, L<shift|Adapter::Async::OrderedList/shift>, L<unshift|Adapter::Async::OrderedList/unshift>
 
 =item L<Adapter::Async>
 

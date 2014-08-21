@@ -1,5 +1,5 @@
 package Adapter::Async::OrderedList::Array;
-$Adapter::Async::OrderedList::Array::VERSION = '0.006';
+$Adapter::Async::OrderedList::Array::VERSION = '0.007';
 use strict;
 use warnings;
 
@@ -11,7 +11,7 @@ Adapter::Async::OrderedList::Array - arrayref adapter
 
 =head1 VERSION
 
-Version 0.006
+Version 0.007
 
 =head1 DESCRIPTION
 
@@ -34,9 +34,10 @@ sub clear {
 
 sub splice:method {
 	my ($self, $idx, $len, $data) = @_;
-	splice @{$self->{data}}, $idx, $len, @$data;
-	$self->bus->invoke_event(splice => $idx, $len, $data);
-	Future->wrap($idx, $len, $data);
+	$data ||= [];
+	my @rslt = splice @{$self->{data}}, $idx, $len, @$data;
+	$self->bus->invoke_event(splice => $idx, $len, $data => \@rslt);
+	Future->wrap($idx, $len, $data, \@rslt);
 }
 
 # XXX weakrefs
@@ -76,6 +77,7 @@ sub count {
 
 sub get {
 	my ($self, %args) = @_;
+	return Future->fail('unknown item') if grep $_ > @{$self->{data}}, @{$args{items}};
 	my @items = @{$self->{data}}[@{$args{items}}];
 	if(my $code = $args{on_item}) {
 		my @idx = @{$args{items}};

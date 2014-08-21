@@ -16,7 +16,7 @@ Adapter::Async::OrderedList - API for dealing with ordered lists
 
 =head1 VERSION
 
-Version 0.006
+Version 0.007
 
 =head1 DESCRIPTION
 
@@ -149,6 +149,11 @@ Removes the last element from the list, will resolve with the value.
 =head2 shift
 
 Removes the first element from the list, will resolve with the value.
+
+=head2 all
+
+Returns all the items. Shortcut for calling
+L</count> then L</get>.
 
 =head1 INHERITED METHODS
 
