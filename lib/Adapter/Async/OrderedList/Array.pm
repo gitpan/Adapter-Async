@@ -1,5 +1,5 @@
 package Adapter::Async::OrderedList::Array;
-$Adapter::Async::OrderedList::Array::VERSION = '0.007';
+$Adapter::Async::OrderedList::Array::VERSION = '0.008';
 use strict;
 use warnings;
 
@@ -11,7 +11,7 @@ Adapter::Async::OrderedList::Array - arrayref adapter
 
 =head1 VERSION
 
-Version 0.007
+Version 0.008
 
 =head1 DESCRIPTION
 
@@ -51,9 +51,10 @@ sub move {
 
 # XXX needs updating
 sub modify {
-	my ($self, $idx, @cols) = @_;
+	my ($self, $idx, $data) = @_;
 	die "row out of bounds" unless @{$self->{data}} >= $idx;
-	$self->{data}[$idx][$_] = $cols[$_] for 0..$#cols;
+	$self->{data}[$idx] = $data;
+	$self->bus->invoke_event(modify => $idx, $data);
 	Future->wrap
 }
 

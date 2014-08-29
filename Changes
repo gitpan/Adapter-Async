@@ -1,5 +1,9 @@
 Revision history for Adapter-Async
 
+0.008     2014-08-30 00:38:42+01:00 Europe/London
+	Features:
+	* ->modify for changing a single element
+
 0.007     2014-08-21 17:20:12+01:00 Europe/London
 	Features:
 	* Helper methods for ->all

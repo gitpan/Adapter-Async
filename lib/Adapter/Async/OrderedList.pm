@@ -1,5 +1,5 @@
 package Adapter::Async::OrderedList;
-$Adapter::Async::OrderedList::VERSION = '0.007';
+$Adapter::Async::OrderedList::VERSION = '0.008';
 use strict;
 use warnings;
 
@@ -11,7 +11,7 @@ Adapter::Async::OrderedList - API for dealing with ordered lists
 
 =head1 VERSION
 
-Version 0.007
+Version 0.008
 
 =head1 DESCRIPTION
 
@@ -43,6 +43,8 @@ This means we have double-notify on get: a request for (1,2,3,4) needs to fire e
 =item * clear - remove all data
 
 =item * splice - modify by adding/removing items at a given point
+
+=item * modify - changes a single entry
 
 =back
 
