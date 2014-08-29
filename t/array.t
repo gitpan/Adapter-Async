@@ -110,5 +110,27 @@ is(exception {
 }, undef, 'can clear');
 is($array->count->get, 0, 'count now zero');
 
+{
+	my $modified = 0;
+	$array->bus->subscribe_to_event(
+		modify => sub {
+			my ($ev, $idx, $data) = @_;
+			is($idx, 2, 'modify event had expected index');
+			is($data, 'x', 'correct value');
+			++$modified;
+			$ev->unsubscribe;
+		}
+	);
+	is(exception {
+		$array->push([qw(a b c d)])->get;
+	}, undef, 'can push');
+	is($array->count->get, 4, 'count now 4');
+	is($modified, 0, 'not yet modified');
+	is(exception {
+		$array->modify(2, 'x')->get;
+	}, undef, 'can modify');
+	is($modified, 1, 'was modified');
+}
+
 done_testing;
 

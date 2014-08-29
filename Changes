@@ -1,5 +1,11 @@
 Revision history for Adapter-Async
 
+0.009     2014-08-30 00:43:28+01:00 Europe/London
+	No new features.
+
+	Test fixes:
+	* Missing tests from previous release added
+
 0.008     2014-08-30 00:38:42+01:00 Europe/London
 	Features:
 	* ->modify for changing a single element

@@ -1,5 +1,5 @@
 package Adapter::Async::OrderedList::Array;
-$Adapter::Async::OrderedList::Array::VERSION = '0.008';
+$Adapter::Async::OrderedList::Array::VERSION = '0.009';
 use strict;
 use warnings;
 
@@ -11,7 +11,7 @@ Adapter::Async::OrderedList::Array - arrayref adapter
 
 =head1 VERSION
 
-Version 0.008
+Version 0.009
 
 =head1 DESCRIPTION
 

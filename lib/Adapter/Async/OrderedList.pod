@@ -16,7 +16,7 @@ Adapter::Async::OrderedList - API for dealing with ordered lists
 
 =head1 VERSION
 
-Version 0.008
+Version 0.009
 
 =head1 DESCRIPTION
 
