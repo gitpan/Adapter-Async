@@ -16,7 +16,7 @@ Adapter::Async::OrderedList::Array - arrayref adapter
 
 =head1 VERSION
 
-Version 0.009
+Version 0.010
 
 =head1 DESCRIPTION
 

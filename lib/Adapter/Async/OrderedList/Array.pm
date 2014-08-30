@@ -1,5 +1,5 @@
 package Adapter::Async::OrderedList::Array;
-$Adapter::Async::OrderedList::Array::VERSION = '0.009';
+$Adapter::Async::OrderedList::Array::VERSION = '0.010';
 use strict;
 use warnings;
 
@@ -11,7 +11,7 @@ Adapter::Async::OrderedList::Array - arrayref adapter
 
 =head1 VERSION
 
-Version 0.009
+Version 0.010
 
 =head1 DESCRIPTION
 
@@ -61,6 +61,32 @@ sub modify {
 sub delete {
 	my ($self, $idx) = @_;
 	$self->splice($idx, 1, [])
+}
+
+# Locate matching element (via eq), starting at the given index
+# and iterating either side until we hit it. For cases where splice
+# activity may have moved the element but we're not expecting it to
+# have gone far.
+sub find_from {
+	my ($self, $idx, $data) = @_;
+	my $delta = 0;
+	my $end = $#{$self->{data}};
+	ITEM:
+	while(1) {
+		if($idx + $delta <= $end) {
+			return Future->wrap(
+				$idx + $delta
+			) if $self->{data}[$idx + $delta] eq $data;
+		}
+		if($idx - $delta >= 0) {
+			return Future->wrap(
+				$idx - $delta
+			) if $self->{data}[$idx - $delta] eq $data;
+		}
+		last ITEM if $idx + $delta > $end && $idx - $delta < 0;
+		++$delta;
+	}
+	Future->fail('not found');
 }
 
 =head1 count
