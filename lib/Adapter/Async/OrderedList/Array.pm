@@ -1,5 +1,5 @@
 package Adapter::Async::OrderedList::Array;
-$Adapter::Async::OrderedList::Array::VERSION = '0.010';
+$Adapter::Async::OrderedList::Array::VERSION = '0.011';
 use strict;
 use warnings;
 
@@ -11,7 +11,7 @@ Adapter::Async::OrderedList::Array - arrayref adapter
 
 =head1 VERSION
 
-Version 0.010
+Version 0.011
 
 =head1 DESCRIPTION
 
@@ -71,6 +71,8 @@ sub find_from {
 	my ($self, $idx, $data) = @_;
 	my $delta = 0;
 	my $end = $#{$self->{data}};
+	$idx = $end if $idx > $end;
+	$idx = 0 if $idx < 0;
 	ITEM:
 	while(1) {
 		if($idx + $delta <= $end) {

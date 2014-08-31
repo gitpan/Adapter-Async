@@ -1,5 +1,5 @@
 package Adapter::Async::OrderedList;
-$Adapter::Async::OrderedList::VERSION = '0.010';
+$Adapter::Async::OrderedList::VERSION = '0.011';
 use strict;
 use warnings;
 
@@ -11,7 +11,7 @@ Adapter::Async::OrderedList - API for dealing with ordered lists
 
 =head1 VERSION
 
-Version 0.010
+Version 0.011
 
 =head1 DESCRIPTION
 

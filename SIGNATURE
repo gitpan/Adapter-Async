@@ -14,23 +14,23 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 57b93b8c4d664672cd8ce79e1917ab70756e7598 Changes
+SHA1 107744a2d0d7147a3c07b8af101c24bd1b349313 Changes
 SHA1 aab70c550aec0561d89c10a4dce90dd6477cc94e INSTALL
 SHA1 6b50b30fa6f8d063d96e32c9a81f3f82328925f7 LICENSE
 SHA1 ba6090bfac9edcc9cd39bbba8d89659d71d43315 MANIFEST
-SHA1 1b98f440219b77e59cb0f67cb95460eca68145fb META.json
-SHA1 48893b298b6921514f393499f16310f121152cfc META.yml
-SHA1 fcce29ef1db8d0674195c01da5c639175ff32a62 Makefile.PL
-SHA1 294b0842d15f11247acd32d53773a99f6dc04c78 README
+SHA1 f45dab36f0a334041ac712d6e7e3e245b3a88c88 META.json
+SHA1 f34e0ea42af53a2d66716419ac6d98f6f1656ad4 META.yml
+SHA1 fc4069a91342bfd8da06da59a65146b3e18c235d Makefile.PL
+SHA1 bf2531dbd8a3ca969cb94fbc6bf25e13797dc863 README
 SHA1 e4457dbc153534b554291a061d61b3f649f197b4 cpanfile
 SHA1 4a8d259f133a128ee7ed9036c0edc7be733a1b43 dist.ini
-SHA1 4f1ad2ff73b83c09b9d84c2154dad60463ca6e02 lib/Adapter/Async.pm
-SHA1 0af67467f076beefab6d265f7cd74db64c16dda8 lib/Adapter/Async/Bus.pm
-SHA1 4f3bb09c0dcb18da9d0bbe1ef8423f569bc2ba3a lib/Adapter/Async/Bus.pod
-SHA1 62a357bd688550e3dbea63d229780daa85da5b3a lib/Adapter/Async/OrderedList.pm
-SHA1 cdcf092e468d1f15a00a5e534014cb5e69e57397 lib/Adapter/Async/OrderedList.pod
-SHA1 babb09083f397baeb0b8bf3ee8fbe72ce5a93bfb lib/Adapter/Async/OrderedList/Array.pm
-SHA1 615507355ff8a6f90d8674f5481d815fe4e50eef lib/Adapter/Async/OrderedList/Array.pod
+SHA1 42b11dd50b82afc06b6061e78e522a5441729b8a lib/Adapter/Async.pm
+SHA1 41798ce48d05b8b51cda973f9730beb6008bebca lib/Adapter/Async/Bus.pm
+SHA1 62f2dc9fe6f2ae549a94822627e56a0249126a32 lib/Adapter/Async/Bus.pod
+SHA1 b92ec48d8064253cff167c3c0ce88f0699da9a2d lib/Adapter/Async/OrderedList.pm
+SHA1 44a5f2e548c7afe3bb09855e79e42a9eaa3c9a43 lib/Adapter/Async/OrderedList.pod
+SHA1 4e030c77b142f14996f7a6f12a807f4f8a895fbf lib/Adapter/Async/OrderedList/Array.pm
+SHA1 63be4c0826e0d4c45205949214d399d68f11ecb5 lib/Adapter/Async/OrderedList/Array.pod
 SHA1 985d9ded8d8ed7e344a09e52b1402e878e91da28 t/00-check-deps.t
 SHA1 9affea4acd9c7ce208007e22c0a2cba85558892f t/00-compile.t
 SHA1 cfc3224209cbd0af4f082a486a21c7c0894e582c t/000-report-versions-tiny.t
@@ -43,11 +43,11 @@ SHA1 bbcd59d081d9940af5d43337ae85458075933829 xt/release/test-version.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJUAl5vAAoJEFKElMNpjtyDAxMH/iRa2vvv9J02lhJYuswy4m7Y
-AwyGkt1zzRc/5dulY4PLRSd2zmVDsLZuLW770aeJs/AveARgXPXz+NcDPdU7KZfn
-BSOiWW92JNfp+9lfa9sJ3bFnCLV+bFRn5McfjdnHKXIuCuuRYreOACpiQcccyLzE
-PW8gv9PlimDLut8k/511S7IeXzb9/TPz1sYiA2pKINbSZ1QZjkVdI2mfH38m1CfQ
-vdMBPvylwu1GRKH7Xc4haIxjtJ7V1CLxYjyWN7Ei0KbOfYGxPGAc326W5IuOgR+v
-3e9gknsMnLyMu/ARTpbeV++DOOuWwmG1KmalYe3NJhNq1d81E9iXKDStU7eNYTE=
-=lvti
+iQEcBAEBAgAGBQJUA1H3AAoJEFKElMNpjtyDrlEH/3KSoedR5XEE/put8HuvMlj5
+xpGE/hzuFiQ8HYqFHVjn4g/X4J61fWEwToYMbDGg2WNlkhlVznj9pzGhv1lHRxO+
+/Bkf14L2PG18A+1aVIznxesppyzVUXtmxxSKXp/B0byHYnxNF1AgBMv0GBfpv10q
+4oaLCu7w7YK70cf9q8KTjA4xSNVPWFmLDAXJfKJ6PNno5Fn/CulmKJRpbJ4sZTkM
+vR2ocYOJ6xoM33c6/zyuibt76nvrPBWGSFGTjcNOxwudzgZQ7OCFjM+gnaa4QCpX
+QC1oKeB2fhSLtfYauKk52y2/0OyFHsFnTzo/G8afgDzT/YZu8vg6/VRYd/D1Jtk=
+=/fwv
 -----END PGP SIGNATURE-----
